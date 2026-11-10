@@ -3,7 +3,6 @@ import psycopg2
 
 
 def add_student(conn, name, grade):
-    """Ajouter un étudiant."""
     cursor = conn.cursor()
 
     cursor.execute(
@@ -19,7 +18,6 @@ def add_student(conn, name, grade):
 
 
 def get_student(conn, student_id):
-    """Lire un étudiant."""
     cursor = conn.cursor()
 
     cursor.execute(
@@ -41,7 +39,6 @@ def get_student(conn, student_id):
 
 
 def average_grade(conn):
-    """Calculer la moyenne des notes."""
     cursor = conn.cursor()
 
     cursor.execute("SELECT AVG(grade) FROM students")
