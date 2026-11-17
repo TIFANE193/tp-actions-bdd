@@ -1,0 +1,7 @@
+{
+  "name": "node-app",
+  "version": "1.0.0",
+  "scripts": { "test": "jest" },
+  "dependencies": { "pg": "^8.11.5" },
+  "devDependencies": { "jest": "^29.7.0" }
+}
